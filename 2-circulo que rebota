@@ -1,0 +1,18 @@
+//https://editor.p5js.org/azaelMoreno/sketches/Rwanz9PvQ
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+var x = 200;
+var vel = 1;
+
+function draw() {
+  background(220);
+  fill(10, 200, 50);
+  ellipse(x, 200, 20, 20);
+  x = x + vel;
+  if (x > 390 || x < 10) {
+    vel = vel * -1;
+  }
+}
