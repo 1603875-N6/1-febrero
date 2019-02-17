@@ -1,0 +1,18 @@
+//https://editor.p5js.org/azaelMoreno/sketches/KEUDs1-zX
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(60, 150, 93);
+  rect(150, 150, 100, 100);
+  if (mouseX > 149 & mouseX < 251) {
+    if (mouseY > 149 & mouseY < 251) {
+      if (mouseIsPressed) {
+        background(230, 100, 50);
+        rect(150, 150, 100, 100);
+      }
+    }
+  }
+}
